@@ -1,0 +1,36 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francis Q E-commerce Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{% static 'shop/css/styles.css' %}">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <a href="#" class="logo">Francis <span>Q.</span></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#new" onclick="toggleCart()">Cart</a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <div id="cart-list" style="display: none;">
+            <h2>Cart</h2>
+            <ul class="list-group"></ul>
+        </div>
+        {% block content %}
+        {% endblock %}
+    </div>
+    <script src="{% static 'shop/js/scripts.js' %}"></script>
+</body>
+</html>

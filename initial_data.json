@@ -1,0 +1,77 @@
+[
+  {
+      "model": "shop.category",
+      "pk": 1,
+      "fields": {
+          "name": "Electronics"
+      }
+  },
+  {
+      "model": "shop.category",
+      "pk": 2,
+      "fields": {
+          "name": "Books"
+      }
+  },
+  {
+      "model": "shop.region",
+      "pk": 1,
+      "fields": {
+          "name": "North America"
+      }
+  },
+  {
+      "model": "shop.region",
+      "pk": 2,
+      "fields": {
+          "name": "Europe"
+      }
+  },
+  {
+      "model": "shop.product",
+      "pk": 1,
+      "fields": {
+          "name": "Iphone 14",
+          "description": "A high-end smartphone",
+          "price": "699.99",
+          "stock_quantity": 50,
+          "category": 1,
+          "region": 1,
+          "image_url": "https://th.bing.com/th/id/OIP.GLKNw_Y2VX79umYlTAIwJwHaEK?rs=1&pid=ImgDetMain"
+      }
+  },
+  {
+      "model": "shop.product",
+      "pk": 2,
+      "fields": {
+          "name": "Hp Laptop",
+          "description": "A powerful laptop",
+          "price": "999.99",
+          "stock_quantity": 30,
+          "category": 1,
+          "region": 2,
+          "image_url": "https://th.bing.com/th/id/R.5f16eb5eb435fec7fd6531a74c94a331?rik=aVfNdwY%2bAUZgyA&pid=ImgRaw&r=0"
+      }
+  },
+  {
+      "model": "shop.product",
+      "pk": 3,
+      "fields": {
+          "name": "The Bible",
+          "description": "Gods Word",
+          "price": "19.99",
+          "stock_quantity": 10,
+          "category": 2,
+          "region": 1,
+          "image_url": "https://th.bing.com/th/id/OIP.dkrtxekaq2tV2un0V6CHiAHaHa?rs=1&pid=ImgDetMain"
+      }
+  },
+  {
+      "model": "shop.cart",
+      "pk": 1,
+      "fields": {
+          "product": 1,
+          "quantity": 2
+      }
+  }
+]
